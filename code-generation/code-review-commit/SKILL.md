@@ -39,13 +39,13 @@ description: 评审当前改动、运行提交前检查、并按 Conventional Co
 
 按技术栈信号判断（存在才跑）：
 
-| 信号 | 检查 |
-| --- | --- |
-| `go.mod`（从该模块目录运行） | 改动的 Go 文件过 `gofmt -w`；`go test ./...`、`go vet ./...`；装了 golangci-lint 就跑，版本以 CI 固定值为准 |
-| `package.json` | 用项目 scripts 里已有的 `lint`、`typecheck`、`test`；用户可见或影响构建的改动加 `build`；页面交互/布局改动加 e2e |
-| Python（`pyproject.toml` / `requirements*.txt`） | 按项目配置跑 lint（ruff 等）、类型检查（mypy 等）、pytest |
-| Makefile / justfile 有 `check`、`test` 目标 | 优先用项目自己的目标 |
-| 容器/部署文件、环境变量改动 | 有 Docker 就渲染校验 compose 配置：`docker compose --env-file <env模板> -f <compose文件> config`；环境变量新增要同步 env 模板、compose、启动脚本和部署文档 |
+| 信号                                             | 检查                                                                                                                                                       |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `go.mod`（从该模块目录运行）                     | 改动的 Go 文件过`gofmt -w`；`go test ./...`、`go vet ./...`；装了 golangci-lint 就跑，版本以 CI 固定值为准                                                 |
+| `package.json`                                   | 用项目 scripts 里已有的`lint`、`typecheck`、`test`；用户可见或影响构建的改动加 `build`；页面交互/布局改动加 e2e                                            |
+| Python（`pyproject.toml` / `requirements*.txt`） | 按项目配置跑 lint（ruff 等）、类型检查（mypy 等）、pytest                                                                                                  |
+| Makefile / justfile 有`check`、`test` 目标       | 优先用项目自己的目标                                                                                                                                       |
+| 容器/部署文件、环境变量改动                      | 有 Docker 就渲染校验 compose 配置：`docker compose --env-file <env模板> -f <compose文件> config`；环境变量新增要同步 env 模板、compose、启动脚本和部署文档 |
 
 仓库自带的其他检查手段（`tools/`、`scripts/` 下的 check 类脚本，pre-commit 框架、husky hooks）存在就一并跑。
 
@@ -89,6 +89,8 @@ feat: 新增导出数据的 CSV 格式支持
 ```
 
 反面示例：`发版`、`自动更新`、`登录授权` 这类一个词或光秃秃名词短语的主题让历史无法检索；改动值得提交，就值得一句话说清。
+
+写好commit信息后要弹窗提示，我来确认commit信息。
 
 ## 6. 提交并汇报
 

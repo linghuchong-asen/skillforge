@@ -5,6 +5,7 @@ AI skill仓库 - 一个集中管理和展示AI技能的平台
 ## 📋 项目介绍
 
 SkillForge 是一个专为AI模型和开发者设计的skill仓库，用于存储、管理和共享各类AI技能，包括但不限于：
+
 - 代码生成和优化技能
 - 文本处理和分析技能
 - 数据转换技能
@@ -26,7 +27,7 @@ skillforge/
 ├── README.md                 # 项目说明文档
 ├── skills/                   # Skill文件夹
 │   ├── code-generation/     # 代码生成类skill
-│   ├── text-processing/     # 文本处理类skill
+│   ├── text-processing/     # 办公处理类skill
 │   ├── data-transform/      # 数据转换类skill
 │   └── automation/          # 任务自动化skill
 └── docs/                     # 文档和指南
@@ -35,15 +36,19 @@ skillforge/
 ## 🛠️ 使用方法
 
 ### 查找Skill
+
 浏览 `skills/` 目录，按分类查找所需的skill
 
 ### 使用Skill
+
 1. 查看对应skill的README或文档
 2. 按照说明集成到你的项目中
 3. 根据需要进行配置和定制
 
 ### 贡献新的Skill
+
 欢迎提交新的skill！请遵循以下步骤：
+
 1. Fork 本仓库
 2. 创建新的skill分支
 3. 添加skill文件和完整文档
@@ -52,6 +57,7 @@ skillforge/
 ## 📖 文档
 
 详细的使用文档位于 `docs/` 目录，包括：
+
 - 快速开始指南
 - API参考
 - 最佳实践
@@ -71,6 +77,7 @@ skillforge/
 ## 📧 联系方式
 
 如有问题或建议，欢迎：
+
 - 提交 GitHub Issues
 - 发送邮件反馈
 
