@@ -25,11 +25,11 @@ SkillForge 是一个专为AI模型和开发者设计的skill仓库，用于存�
 ```
 skillforge/
 ├── README.md                 # 项目说明文档
-├── skills/                   # Skill文件夹
-│   ├── code-generation/     # 代码生成类skill
-│   ├── text-processing/     # 办公处理类skill
-│   ├── data-transform/      # 数据转换类skill
-│   └── automation/          # 任务自动化skill
+├── code-generation/          # 代码生成类skill
+│   ├── code-review-commit/
+│   └── create-code-project/
+├── work-processing/          # 办公处理类skill
+│   └── spec-workflow/
 └── docs/                     # 文档和指南
 ```
 
@@ -37,7 +37,7 @@ skillforge/
 
 ### 查找Skill
 
-浏览 `skills/` 目录，按分类查找所需的skill
+浏览各分类目录，按类型查找所需的skill
 
 ### 使用Skill
 
