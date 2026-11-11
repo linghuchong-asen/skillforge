@@ -25,7 +25,7 @@ SkillForge 是一个专为AI模型和开发者设计的skill仓库，用于存�
 ```
 skillforge/
 ├── README.md                 # 项目说明文档
-├── code-generation/          # 代码生成类skill
+├── code/                     # 代码生成类skill
 │   ├── code-review-commit/
 │   └── create-code-project/
 ├── work-processing/          # 办公处理类skill
