@@ -1,0 +1,3 @@
+interface:
+  display_name: "Codex 远程模型 / Provider 更新"
+  short_description: "更新远程 Codex 主机的模型、渠道和 cc-relay 配置"
